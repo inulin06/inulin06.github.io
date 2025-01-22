@@ -1,0 +1,209 @@
+/* styles.css */
+
+html, body {
+	height: 100%;
+	margin: 0;
+	overflow: hidden; /* 防止垂直滾動條 */
+	box-sizing: border-box;
+	transition: background-color 0.5s ease;
+	background-color: #5a5247;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.horizontal-scroll {
+	display: flex;
+	flex-direction: row;
+	height: 100vh; /* 讓內容區域填滿視口高度 */
+	overflow-x: auto; /* 允許橫向滾動 */
+	scroll-snap-type: x mandatory; /* 強制橫向滾動對齊 */
+	overflow-y: hidden;
+}
+
+.section {
+	min-width: 100vw; /* 每個 section 的寬度等於視口寬度 */
+	height: 100vh; /* 每個 section 的高度等於視口高度 */
+	display: flex;
+	flex-shrink: 0; /* 防止 section 被縮小 */
+	/* scroll-snap-align: center; 滾動時對齊中心 */
+	box-sizing: border-box; /*包括內邊距和邊框在內*/
+	position: relative;
+}
+
+img {
+	position: relative;
+	top:5vh;
+	left:-10vh;
+	z-index: 1;
+}
+.Conent_photo2{
+	position: absolute;
+	z-index: 2;
+}
+
+/*PHOTO Light*/
+.title {
+	margin: 0;
+	padding: 2.5% ;
+	font-size: 15vh;
+	position: relative;
+	color: white;
+}
+
+/*Photography studio*/
+p{
+	font-size: 4vh;
+}
+/*情境標題文字*/
+.situation_title1{
+	font-size: 4vh;
+	color: white;
+	padding-top: 60vh;
+	padding-left: 0vw;
+}
+
+.situation_title2{
+	/*background-color: black;*/
+	writing-mode: vertical-rl;
+	font-size: 4vh;
+	color: white;
+	padding-top: 10vh;
+	padding-left: 35vh;
+}
+
+/*導覽列*/
+nav{
+	font-size: 2vh;
+	position: absolute;
+	top: 3vh;
+	left: 70vw;
+	color: white;
+	padding: 10px;
+	z-index: 10;
+}
+
+.navbar_title{
+	position: relative;
+	top:8vh;
+	color:white;
+	font-size: 5vh;
+}
+
+#home{
+	all: unset;
+	cursor: pointer;
+	display: inline-block;
+}
+
+/*導覽列滑過去變色*/
+nav:hover {
+background-color: rgba(219, 219, 219, 0.2);
+}
+
+/*about區域*/
+
+.about_title{
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	text-align: center;
+	font-size: 30vh;
+	white-space: nowrap;
+	line-height: 1;
+	margin: 0; /* 確保元素之間沒有額外的外邊距 */
+
+}
+.about_title2{
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	text-align: center;
+	font-size: 30vh;
+	white-space: nowrap;
+	line-height: 1;
+	letter-spacing: -0.5vh; /* 減少字母間的距離 */
+	margin: 0; /* 確保元素之間沒有額外的外邊距 */
+}
+
+/*關於我們文字區塊RWD元素*/
+@media screen and (min-width:1601px){
+	#about{
+		width: 50vw;
+	}
+	#about_photo2{
+		padding-left:10vw
+	}
+}
+@media screen and (min-width:1000px) and (max-width:1600px){
+    #about{
+			width: 80vw;
+		}
+		#about_photo2{
+			padding-left:10vw
+		}
+}
+@media screen and (max-width:999px){
+    #about{
+			width: 90vw;
+		}
+		#about_photo2{
+			padding-left:20vw
+		}
+}
+
+/*服務項目區域*/
+
+.service_photo{
+	border: 10px solid white;
+	border-radius: 30px 0;
+	height: 100%;
+	width: 90%;
+	object-fit: cover;
+	top:0;
+	left:0;
+	box-sizing: border-box;
+
+}
+table{
+	top:20vh;
+	position: absolute;
+	left: 15vw;
+	border-spacing:50px 0;
+}
+.td_service_photo{
+	height:55vh;
+	text-align: center;
+}
+.td_service_text{
+	text-align: center;
+	font-size: 2vh;
+	padding: 20px;
+}
+
+/*照片牆*/
+
+.photo-wall {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 10px; /* 照片之間的間距 */
+	padding: 10px; /* 內邊距 */
+	width: 100%;
+	height: 70vh;
+	margin: 0 auto;
+	padding-top:3vh;
+	padding-left: 15vw;
+}
+
+.photo-wall img {
+	width: 100%;
+	height: auto; /* 自適應高度 */
+	object-fit: cover; /* 確保圖片不變形並填滿容器 */
+	border-radius: 10px; /* 圖片圓角 */
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+.photo-wall img:hover {
+	transform: scale(1.05); /* 當懸停時放大圖片 */
+}

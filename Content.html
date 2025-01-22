@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap-grid.css">
+    <script src="./bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+    <title>橫向網站示例</title>
+    <link rel="stylesheet" href="./Content.css">
+</head>
+<body>
+    <div class="horizontal-scroll" id="horizontalScroll">
+        <section class="section">
+            <h1 class="title"><span style="color: #c69780;font-size: 15vh;" id="photo">PHOTO</span><br>Light
+            <br>
+            <p>Photography studio</p>
+            </h1>
+            <div>
+                <img src="./image/Conent photo1.png" class="Conent_photo1" style="height: 90vh;">
+            </div>
+
+            <h2 class="situation_title1">紀錄，<br><span style="white-space: nowrap;">屬於你的重要時刻</span></h2>
+            <img src="./image/arrow1.png" style="height: 15vh;left: -5vw;top: 80vh; ">
+
+
+        </section>
+        <section class="section">
+            <img src="./image/Conent photo2.png" style="height: 40vh; top:15vh" class="Conent_photo2">
+            <img src="./image/Conent photo3.png" style="height: 80vh; top:10vh ; left: 35vh">
+            <h2 class="situation_title2">珍愛，<br>屬於你的寶貝時光</h2>
+            <img src="./image/baby photo 1.jpg" style="height:100vh; left:5vh;position: relative; top:0">
+            <img src="./image/YJ__2354.jpg" style="height: 60vh;left: 15vh;top: 25%;">
+        </section>
+        <section class="section">
+            <div style="padding-left: 30vh;" id="about">
+                <h2 class="navbar_title">About us</h2>
+                <p style="padding-top: 10vh;">歡迎來到 PHOTO LIGHT，我們致力於用熱情與精湛的技術捕捉每一個珍貴時刻。不論是婚禮、家庭寫真，還是個人紀念日，我們風格融合了傳統與現代，確保每張照片都能講述屬於您的故事，將每一次拍攝都轉化為獨特且永恆的影像。</p>
+                <p style="font-weight:bold ;color: rgb(255, 255, 255);text-align: center;padding-top: 3vh;">"讓我們為您點亮每一個瞬間，帶您感受每一個畫面中的美好。"</p>
+            </div>
+            <img src="./image/about_photo2.jpg" style="height: 80vh;top: 10vw;" id="about_photo2">
+            <h1 class="about_title">BEST FOR YOU</h1>
+            <h2 class="about_title2">The most professional team</h2>
+        </section>
+        <section class="section">
+            <h2 class="navbar_title" style="padding-left: 5vh;">Service</h2>
+            <canvas id="canvas" width="1500" height="500"></canvas>
+            <table>
+                <tr>
+                    <td class="td_service_photo">
+                        <img src="./image/Wedding1.jpg" class="service_photo" alt="">
+                    </td>
+                    <td class="td_service_photo">
+                        <img src="./image/Event01.jpg" class="service_photo" alt="">
+                    </td>
+                    <td class="td_service_photo">
+                        <img src="./image/Product01.jpg" class="service_photo" alt="">
+                    </td>
+                    <td class="td_service_photo">
+                        <img src="./image/Portraits_photo1.JPG" class="service_photo" alt="">
+                    </td>
+                    <td class="td_service_photo">
+                        <img src="./image/Portraits_photo5.jpg" class="service_photo" alt="">
+                    </td>
+                    <td class="td_service_photo">
+                        <img src="./image/spcae_photo1.jpg" class="service_photo" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_service_text">婚禮攝影<br>Wedding</td>
+                    <td class="td_service_text">活動紀錄<br>Event</td>
+                    <td class="td_service_text">商品攝影<br>Product</td>
+                    <td class="td_service_text">個人寫真<br>Individual Portrait</td>
+                    <td class="td_service_text">團體寫真<br>Group Portrait</td>
+                    <td class="td_service_text">空間攝影<br>Spcae</td>
+                </tr>
+            </table>
+        </section>
+        <section class="section">
+            <h2 class="navbar_title" style="position: absolute;left:-10vw;">Collection</h2>
+            <div class="photo-wall">
+                    <img src="./image/Portraits_photo2.JPG" alt="Image 1">
+                    <img src="./image/Portraits_photo3.jpg" alt="Image 2">
+                    <img src="./image/Portraits_photo4.jpg" alt="Image 3">
+                    <img src="./image/Portraits_photo5.jpg" alt="Image 4">
+                    <img src="./image/Product02.jpg" alt="Image 5">
+                    <img src="./image/Product03.jpg" alt="Image 6">
+                    <img src="./image/Wedding2.jpg" alt="Image 7">
+                    <img src="./image/Wedding3.jpg" alt="Image 8">
+                    <img src="./image/Event01.jpg" alt="Image 9">
+                    <img src="./image/spcae_photo1.jpg" alt="Image 10">
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="navbar_title" style="position: absolute;">Contact</h2>
+        </section>
+    </div>
+    <nav>
+        <tr class="navbar">
+            <td><button id="home">Home</button></td>&nbsp;&nbsp;
+            <td>About</td>&nbsp;&nbsp;
+            <td>Service</td>&nbsp;&nbsp;
+            <td>Collection</td>&nbsp;&nbsp;
+            <td>Contact</td>
+            <hr>
+
+        </tr>
+    </nav>
+    <script src="./Content.js"></script>
+</body>
+</html>
