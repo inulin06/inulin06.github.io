@@ -3,17 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap-grid.css">
-    <script src="./bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
-    <title>橫向網站示例</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <title>PHOTO LIGHT攝影工作室</title>
     <link rel="stylesheet" href="./Content.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+        @font-face {
+            font-family: 'VarelaRound' ;
+            src: url('fonts/jf-openhuninn-2.1.ttf')format('truetype');
+            font-weight: normal;
+        }
+        @font-face {
+            font-family: 'VarelaRound' ;
+            src: url('fonts/jf-openhuninn-2.1.ttf')format('truetype');
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <div class="horizontal-scroll" id="horizontalScroll">
         <section class="section">
             <h1 class="title"><span style="color: #c69780;font-size: 15vh;" id="photo">PHOTO</span><br>Light
             <br>
-            <p>Photography studio</p>
+            <p>Photography studio<br><p><b>攝影工作室</b></p></p>
             </h1>
             <div>
                 <img src="./image/Conent photo1.png" class="Conent_photo1" style="height: 90vh;">
@@ -31,18 +44,26 @@
             <img src="./image/baby photo 1.jpg" style="height:100vh; left:5vh;position: relative; top:0">
             <img src="./image/YJ__2354.jpg" style="height: 60vh;left: 15vh;top: 25%;">
         </section>
-        <section class="section">
+        <section class="section" id="aboutSection">
             <div style="padding-left: 30vh;" id="about">
-                <h2 class="navbar_title">About us</h2>
-                <p style="padding-top: 10vh;">歡迎來到 PHOTO LIGHT，我們致力於用熱情與精湛的技術捕捉每一個珍貴時刻。不論是婚禮、家庭寫真，還是個人紀念日，我們風格融合了傳統與現代，確保每張照片都能講述屬於您的故事，將每一次拍攝都轉化為獨特且永恆的影像。</p>
-                <p style="font-weight:bold ;color: rgb(255, 255, 255);text-align: center;padding-top: 3vh;">"讓我們為您點亮每一個瞬間，帶您感受每一個畫面中的美好。"</p>
+                <h2 class="navbar_title" >關於我們 About us</h2>
+                <p style="padding-top: 20vh;" class="about_p">歡迎來到 PHOTO LIGHT，我們致力於用熱情與精湛的技術捕捉每一個珍貴時刻。不論是婚禮、家庭寫真，還是個人紀念日，我們風格融合了傳統與現代，確保每張照片都能講述屬於您的故事，將每一次拍攝都轉化為獨特且永恆的影像。</p>
+                <p style="font-weight:bold ;color: rgb(255, 255, 255);text-align: center;padding-top: 3vh;" class="about_p">"讓我們為您點亮每一個瞬間，帶您感受每一個畫面中的美好。"</p>
             </div>
             <img src="./image/about_photo2.jpg" style="height: 80vh;top: 10vw;" id="about_photo2">
-            <h1 class="about_title">BEST FOR YOU</h1>
-            <h2 class="about_title2">The most professional team</h2>
+            <div class="">
+                <h1 class="about_title animate-scroll">—BEST FOR YOU</h1>
+                <h1 class="about_title animate-scroll">—BEST FOR YOU</h1>
+                <h1 class="about_title animate-scroll">—BEST FOR YOU</h1>
+            </div>
+            <div>
+                <h2 class="about_title2 animate-scroll">—PHOTO LIGHT</h2>
+                <h2 class="about_title2 animate-scroll">—PHOTO LIGHT</h2>
+                <h2 class="about_title2 animate-scroll">—PHOTO LIGHT</h2>
+            </div>
         </section>
-        <section class="section">
-            <h2 class="navbar_title" style="padding-left: 5vh;">Service</h2>
+        <section class="section" id="ServiceSection">
+            <h2 class="navbar_title" style="padding-left: 5vh;">服務項目 Service</h2>
             <canvas id="canvas" width="1500" height="500"></canvas>
             <table>
                 <tr>
@@ -75,34 +96,130 @@
                 </tr>
             </table>
         </section>
-        <section class="section">
-            <h2 class="navbar_title" style="position: absolute;left:-10vw;">Collection</h2>
-            <div class="photo-wall">
-                    <img src="./image/Portraits_photo2.JPG" alt="Image 1">
-                    <img src="./image/Portraits_photo3.jpg" alt="Image 2">
-                    <img src="./image/Portraits_photo4.jpg" alt="Image 3">
-                    <img src="./image/Portraits_photo5.jpg" alt="Image 4">
-                    <img src="./image/Product02.jpg" alt="Image 5">
-                    <img src="./image/Product03.jpg" alt="Image 6">
-                    <img src="./image/Wedding2.jpg" alt="Image 7">
-                    <img src="./image/Wedding3.jpg" alt="Image 8">
-                    <img src="./image/Event01.jpg" alt="Image 9">
-                    <img src="./image/spcae_photo1.jpg" alt="Image 10">
+        <section class="section2" id="CollectionSection">
+            <h2 class="navbar_title" style="position: absolute;left:5vh;">攝影集 Collection</h2>
+            <div class="photo-wall gallery" id="photo-wall">
+                    <img class="photo-wall-img" src="./image/Portraits_photo2.JPG" alt="Image 1">
+                    <img class="photo-wall-img" src="./image/Portraits_photo3.jpg" alt="Image 2">
+                    <img class="photo-wall-img" src="./image/Portraits_photo4.jpg" alt="Image 3">
+                    <img class="photo-wall-img" src="./image/Portraits_photo5.jpg" alt="Image 4">
+                    <img class="photo-wall-img" src="./image/Product02.jpg" alt="Image 5">
+                    <img class="photo-wall-img" src="./image/Product03.jpg" alt="Image 6">
+                    <img class="photo-wall-img" src="./image/Wedding2.jpg" alt="Image 7">
+                    <img class="photo-wall-img" src="./image/Wedding3.jpg" alt="Image 8">
+                    <img class="photo-wall-img" src="./image/Event01.jpg" alt="Image 9">
+                    <img class="photo-wall-img" src="./image/spcae_photo1.jpg" alt="Image 10">
+                    <img class="photo-wall-img" src="./image/Portraits_photo6.jpg" alt="Image 10">
+                    <img class="photo-wall-img" src="./image/Portraits_photo7.jpg" alt="Image 10">
+                    <img class="photo-wall-img" src="./image/Portraits_photo8.jpg" alt="Image 10">
+                    <img class="photo-wall-img" src="./image/Portraits_photo9.jpg" alt="Image 10">
+            </div>
+            <div id="photo-wall-modal" class="photo-wall-modal">
+                <span class="close">&times;</span>
+                <button class="prev">&lt;</button>
+                <img class="photo-wall-modal-content" id="modalImage">
+                <button class="next">&gt;</button>
             </div>
         </section>
-        <section class="section">
-            <h2 class="navbar_title" style="position: absolute;">Contact</h2>
+    </section>
+        <section class="section" id="ContactSection">
+            <h2 class="navbar_title" style="position: absolute;padding-left: 5vh;">聯絡我們 Contact</h2>
+            <div class="ContactSection_div">
+                <form action="" class="form">
+                    <h4 style="color: white;" class="form_text">如有攝影相關疑問或需求，歡迎填寫表單與我們聯繫，我們將盡速聯絡您。</h4>
+                    <div class="form-floating mb-3 form-group required">
+                        <input type="name" class="form-control" id="floatingname" placeholder="name">
+                        <label for="floatingname">Name</label>
+                      </div>
+                      <br>
+                      <div style="display: flex;justify-content: center;align-items: center;">
+                        <div class="form-check form-check-inline mb-3 required" >
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">女性</label>
+                        </div>
+                        <div class="form-check form-check-inline mb-3">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">男性</label>
+                        </div>
+                        <div class="form-check form-check-inline mb-3">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+                            <label class="form-check-label" for="inlineRadio3">第三性</label>
+                        </div>
+                    </div>
+                    <div class="form-floating mb-2 required">
+                        <input type="name" class="form-control" id="floatingname" placeholder="name">
+                        <label for="floatingname">Phone Number</label>
+                    </div>
+                    <div class="form-floating mb-2 required">
+                        <input type="name" class="form-control" id="floatingname" placeholder="name">
+                        <label for="floatingname">LINE ID</label>
+                    </div>
+                    <div class="form-floating mb-2 required">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <select class="form-select mb-3 required" aria-label="Default select example">
+                        <option selected>請選擇想諮詢的服務</option>
+                        <option value="1">婚紗攝影</option>
+                        <option value="2">婚禮紀錄</option>
+                        <option value="3">商業攝影</option>
+                        <option value="4">個人/團體形象照</option>
+                        <option value="5">活動紀錄</option>
+                        <option value="6">孕媽咪寫真</option>
+                        <option value="7">其他</option>
+                    </select>
+                    <div class="form-floating mb3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                    </div>
+                    <button type="button" class="btn btn-light Submit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        送出 / Submit
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">已送出</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            感謝您的填寫!收到後我們會盡快回復您。
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <img src="./image/contact-us01.jpg" alt="" style="width: 700px;object-fit: cover;position: relative;height: 80vh;top: 10vh;" class="contact-us">
+        </section>
+        <section class="section" style="min-width: 80vw">
+            <h2 class="navbar_title" style="position: absolute;padding-left: 15vh;">公司位址 Company</h2>
+            <div class="Company">
+                <p class="company_text">Ltd.｜PHOTO LIGHT攝影工作室
+                <br><br>
+                Tax ID｜0800-888-888
+                <br><br>
+                Add｜台中市北區崇德路88號
+                <br><br>
+                Mail｜PHOTO LIGHT@photo.light.com.tw</p>
+                <iframe class="map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.549930423669!2d120.6470233!3d24.1524391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693ddb0d818add%3A0x30daa8100e7472d8!2zWk9aTyBDSEVORyDmlJ3lvbHlt6XkvZzlrqQ!5e0!3m2!1szh-TW!2stw!4v1727768240234!5m2!1szh-TW!2stw" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div style="position: absolute;left:20vw;top:80vh;">
+            <p style="font-size: 20px;">Copyright © PHOTO LIGHT photography 2024. All Rights Reserved｜Design By TskyNet</p>
+        </div>
         </section>
     </div>
     <nav>
         <tr class="navbar">
             <td><button id="home">Home</button></td>&nbsp;&nbsp;
-            <td>About</td>&nbsp;&nbsp;
-            <td>Service</td>&nbsp;&nbsp;
-            <td>Collection</td>&nbsp;&nbsp;
-            <td>Contact</td>
+            <td><button id="About">About</button></td>&nbsp;&nbsp;
+            <td><button id="Service">Service</button></td>&nbsp;&nbsp;
+            <td><button id="Collection">Collection</button></td>&nbsp;&nbsp;
+            <td><button id="Contact">Contact</button></td>
             <hr>
-
         </tr>
     </nav>
     <script src="./Content.js"></script>
